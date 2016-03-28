@@ -1,3 +1,5 @@
+@import '../config';
+@import '../partials/mixins';
 /***************
 GLOBAL STYLES
 ***************/
@@ -21,6 +23,15 @@ body {
 	p , ul {
 		margin: 0 0 2rem;
 	}
+
+  p {
+    code {
+      background-color: $highlight-body-color;
+      color: $tertiary-color;
+      border-radius: 4px;
+      padding: 0.2rem .4rem;
+    }
+  }
 }
 
 // Text Selection Styling
@@ -302,7 +313,7 @@ POST NAV STYLING
 ***************/
 
 .postNav {
-	border-top: 1px dotted darken($font-color, 75%);
+	border-top: 1px dotted darken($font-color, 60%);
 	overflow: hidden;
 
 	.prev, .next {
@@ -326,7 +337,7 @@ POST NAV STYLING
 			-ms-transform: translateY(-50%);
 			transform: translateY(-50%);
 			left: 0;
-			width: 100%;.
+			width: 100%;
 			height: auto;
 		}
 
@@ -382,7 +393,7 @@ FOOTER STYLING
 	padding: 4rem 0 2rem;
 
 	.container {
-		border-top: 1px solid darken($font-color, 50%);
+		border-top: 1px solid darken($font-color, 40%);
 		padding-top: .5em;
 		@include container(90%);
 	}
@@ -414,11 +425,11 @@ FOOTER STYLING
 						height: 100%;
 
 						.outer-shape {
-							fill: $tertiary-color;
+              fill: $body-color;
 						}
 
 						.inner-shape {
-							fill: white;
+							fill: $tertiary-color;
 						}
 					}
 				}
@@ -428,7 +439,7 @@ FOOTER STYLING
 					a {
 						svg {
 							.outer-shape {
-								fill: darken($primary-color, 10%);
+                fill: $header-color;
 							}
 						}
 					}
