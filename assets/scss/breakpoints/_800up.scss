@@ -54,6 +54,10 @@ HEADER STYLING
 ***************/
 
 .header {
+  background-image: url('../img/lightbulbs.png');
+  background-size: cover;
+  background-position: center center;
+
 	height: 15em;
 	position: relative;
 	padding-bottom: 2em;
@@ -100,7 +104,7 @@ HEADER STYLING
 
 				&.current {
 					padding-bottom: .25em;
-					border-bottom: 4px solid rgba(255,255,255,.4); 
+					border-bottom: 2px solid $primary-color;
 				}
 			}
 		}

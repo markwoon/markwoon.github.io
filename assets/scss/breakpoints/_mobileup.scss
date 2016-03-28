@@ -88,7 +88,7 @@ MENU STYLING
 		  width: 100%;
 		  display: block;
 		  background: $header-color;
-		  border-bottom: 2px solid lighten($header-color, 5%);
+		  border-bottom: 2px solid lighten($body-color, 20%);
 
 		  a {
 		  	color: white;
@@ -188,9 +188,6 @@ HEADER STYLING
 
 .header {
 	background-color: $header-color;
-	background-image: url('../img/lightbulbs.png');
-	background-size: cover;
-	background-position: center center;
 	color: $font-color;
 	padding: 0;
 	height: 3em;
