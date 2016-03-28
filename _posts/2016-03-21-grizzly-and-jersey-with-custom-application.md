@@ -4,7 +4,7 @@ title: Using Jersey + Grizzly with a Custom Application
 categories: rtfm
 ---
 
-Couldn't find any good examples of working with Jersey in Grizzly (`grizzly-http-servlet-server`) and a custom `org.glassfish.jersey.server.ResourceConfig` or `javax.ws.rs.core.Application`.
+Can't find any good examples of working with a custom `ResourceConfig` or `Application` from [Jersey](https://jersey.java.net) in [Grizzly](https://grizzly.java.net)'s `grizzly-http-servlet-server`.
 
 After much experimentation, I finally figured it out:
 
