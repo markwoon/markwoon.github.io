@@ -1,0 +1,31 @@
+# Site settings
+title: Stabbing in the Dark
+description: Dev musings and code snippets.
+url: http://markwoon.github.io
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+# Build settings
+lsi: false
+gist:
+  noscript: false
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+gems: [jekyll-paginate]
+paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+
+social:
+   github: markwoon
+   twitter: mark_woon
+   email: markwoon@gmail.com
+
+#google_analytics: "UA-xxx-1"
