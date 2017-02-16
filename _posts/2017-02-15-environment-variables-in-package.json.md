@@ -15,7 +15,7 @@ Here's what used to happen:
   "foo":     "some-command $ENV_VAR/helloworld",
   "foo:win": "some-command %ENV_VAR%\\helloworld",
   "bar": "NODE_PATH=$NODE_PATH:./app/scripts some-command",
-  "bar:win": "echo no equivalent in Windows"
+  "bar:win": "set NODE_PATH=%NODE_PATH%;.\\app\\scripts && some-command"
 }
 ```
 
